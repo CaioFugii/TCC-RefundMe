@@ -1,0 +1,124 @@
+.login {
+  background: linear-gradient(180deg,#353c56,#231f41);
+  color: #000;
+  height: 100vh;
+}
+
+.login-content-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.login-box {
+  left: 50%;
+  background: #ffffff;
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: 99;
+
+  @media (max-width: $MEDIA_IPAD) {
+    width: 90%;
+    padding: 20px;
+  }
+   
+}
+
+// Logo
+.login-logo {
+  left: 50%;
+  margin: 0 auto;
+  max-width: 300px;
+  position: absolute;
+  top: -80px;
+  transform: translateX(-50%);
+}
+
+// Form Group
+.login-form-group {
+  position: relative;
+  text-align: center;
+
+  label {
+    color: $COR_DEFAULT;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
+.login-input input {
+  background: transparent;
+  border-bottom: 1px solid $COR_DEFAULT;
+  border-radius: 0;
+  color: $COR_DEFAULT;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+  text-align: center;
+  transition: box-shadow 0.4s ease;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 5px 10px -5px #dddddd;
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #cccccc;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 1;
+  }
+}
+
+.login-button {
+  background: $COR_DEFAULT;
+  border: 1px solid $COR_DEFAULT;
+  border-radius: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 400ms;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $COR_DEFAULT;
+    outline: none;
+  }
+  &.loading {
+    background-color: gray;
+    border: none;
+    cursor: default;
+    color: #ffffff;
+  }
+}
+
+.login-back {
+  text-transform: uppercase;
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+  text-decoration: underline;
+}

@@ -1,0 +1,146 @@
+.form-group,
+.form-group-filter {
+  font-size: 14px;
+  margin-bottom: 18px;
+  position: relative;
+
+  .checkbox {
+    margin-top: 0px;
+  }
+
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  &.required {
+    label {
+      &:before {
+        content: '*';
+        color: red;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .input-icon {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+  }
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  border-bottom: 1px solid $BORDER_COLOR_INPUT;
+  border-radius: 0;
+  display: block;
+  font-size: 13px;
+  height: 38px;
+  padding: 0 10px;
+  transition: border-color 400ms;
+  width: 100%;
+
+  &:focus {
+    border-color: $COR_SECONDARY;
+    outline: none;
+  }
+
+}
+
+.form-search {
+  background: #eeeeee;
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 8px 25px 8px 20px;
+
+  &:focus {
+    border-color: $COR_SECONDARY;
+    outline: none;
+  }
+}
+
+.form-textarea {
+  height: 100%;
+  padding: 10px;
+}
+
+.form-select {
+  option {
+    color: black
+  }
+}
+
+.mat-input-element {
+  margin-left: 8px !important;
+}
+
+.mat-form-field-flex {
+  height: 2.6em !important;
+}
+
+.mat-form-field-infix {
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.mat-form-field {
+  width: 100%;
+  height: 2.6em;
+}
+
+.form-group-filter {
+  .form-input,
+  .form-select {
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    height: 33px;
+    transition: border-color 400ms;
+
+    &:focus {
+      border-color: #ffffff;
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
+}
+
+button {
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+
+select {
+  option {
+    color: #000000 !important;
+  }
+}
+
+.ng2-tag-input {
+  border-bottom: 1px solid #FFFFFF !important;
+}
+
+.ng2-tag-input__text-input {
+  height: 24px !important;
+}
+
+.ng2-tag-input.ng2-tag-input--focused {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.form-check-label {
+  font-weight: normal !important;
+}

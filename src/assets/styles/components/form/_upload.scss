@@ -1,0 +1,35 @@
+.inputfile {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+
+  & + label {
+    background-color: transparent;
+    border: 1px solid $COR_DEFAULT;
+    border-radius: 30px;
+    color: $COR_DEFAULT;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 80%;
+    overflow: hidden;
+    padding: 8px 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all 40ms;
+
+    i{
+      margin-right: 10px;
+    }
+
+    &:hover{
+      opacity: .6;
+    }
+  }
+}
+
+.no-js .inputfile + label {
+  display: none;
+}

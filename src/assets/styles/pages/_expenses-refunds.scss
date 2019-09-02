@@ -1,0 +1,164 @@
+.expenses-or-refunds {
+  overflow: hidden;
+
+  &-content {
+
+  }
+
+  &-tabs {
+    padding-top: 6px;
+    padding-left: 0;
+    margin-bottom: 40px;
+
+    .item-tab {
+      padding: 0 12px 7px;
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 16px;
+      color: rgb(95, 95, 95);
+      
+      &.is-active,
+      &:hover {
+        border-bottom: 3px solid $COR_BRAND;
+      }
+    }
+  }
+
+  &-buttons {
+    float: right;
+  }
+
+  .btn-create-new {
+    float: right;
+    margin-bottom: 40px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+}
+.modal {
+  .btn-danger:hover {
+    color: $COR_DANGER;
+  }
+
+  .btn-success:hover {
+    color: $COR_SUCCESS;
+  }
+
+  .form-new-expense {
+    overflow: hidden;
+  
+    .col-12 {
+  
+    }
+    .form-group {
+      font-size: 14px;
+      margin-bottom: 18px;
+      position: relative;
+      text-align: left;
+
+      label:first-child {
+        margin-bottom: 4px;
+        display: block;
+        font-size: 12px;
+        color: #000;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .form-input, 
+      .form-textarea, 
+      .form-select {
+        border-bottom: 1px solid #ddd;
+        border-radius: 0;
+        display: block;
+        font-size: 13px;
+        height: 38px;
+        padding: 0 10px;
+        transition: border-color 400ms;
+        width: 100%;
+
+        &:focus {
+          border-color: #2AAEE8;
+          outline: none;
+        }
+      }
+
+      .custom-inputfile {
+        width: 100%;
+        // height: 250px;
+        opacity: 90;
+        overflow: hidden;
+        position: absolute;
+        z-index: 99999999;
+
+        &+ label {
+          max-width: 95%;
+          font-size: 13px;
+          font-weight: 400;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          cursor: pointer;
+          display: inline-block;
+          overflow: hidden;
+          padding: 0;
+          text-transform: initial;
+          position: relative;
+          top: 15px;
+
+          svg {
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            margin-top: -0.25em;
+            margin-right: .6em;
+          }
+
+          &:focus,
+          &.has-focus {
+            &+label {
+              outline: 1px dotted #000;
+              outline: -webkit-focus-ring-color auto 5px;
+            }
+          }
+        
+        }
+      }
+    }
+  }
+}
+
+.form-new-expense {
+  
+
+  .header-table-expenses {
+    margin-top: 40px;
+
+    h3 {
+      float: left;
+      margin: 20px 0;
+      font-size: 20px;
+      color: $COR_BRAND;
+    }
+  
+    .btn-new-expense {
+      float: right;
+      margin: 20px 0;
+    }
+  }
+
+  .form-footer-buttons {
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+
+    .btn-success {
+      float: right;
+    }
+  }
+
+}

@@ -1,0 +1,121 @@
+// Vars
+$dot-size: 6px;
+
+.loader{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 999999999;
+}
+
+.loader-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .dots {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin-right: $dot-size*1.5;
+
+        }
+
+        &:before, &:after {
+            content: "";
+            display: inline-block;
+            width: $dot-size;
+            height: $dot-size;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                &:before {
+                    transform: translateY(-200%);
+                    animation: animBefore 1s linear infinite;
+                    animation-delay: $i*-0.9s;
+                    background-color: $COR_DEFAULT;
+                }
+
+                &:after {
+                    transform: translateY(200%);
+                    animation: animAfter 1s linear infinite;
+                    animation-delay: $i*-0.9s;
+                    background-color: $COR_SECONDARY;
+                }
+            }
+        }
+    }
+}
+
+
+.loader-txt{
+    color: #ddd;
+    font: 11px 'Gotham Book';
+    text-transform: uppercase;
+    margin-top: 35px;
+    letter-spacing: 2px;
+}
+
+@keyframes animBefore {
+    0% {
+        transform: scale(1) translateY(-200%);
+        z-index: 1;
+    }
+
+    25% {
+        transform: scale(1.3) translateY(0);
+        z-index: 1;
+    }
+
+    50% {
+        transform: scale(1) translateY(200%);
+        z-index: -1;
+    }
+
+    75% {
+        transform: scale(0.7) translateY(0);
+        z-index: -1;
+    }
+
+    100% {
+        transform: scale(1) translateY(-200%);
+        z-index: -1;
+    }
+}
+
+@keyframes animAfter {
+    0% {
+        transform: scale(1) translateY(200%);
+        z-index: -1;
+    }
+
+    25% {
+        transform: scale(0.7) translateY(0);
+        z-index: -1;
+    }
+
+    50% {
+        transform: scale(1) translateY(-200%);
+        z-index: 1;
+    }
+
+    75% {
+        transform: scale(1.3) translateY(0);
+        z-index: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(200%);
+        z-index: 1;
+    }
+}

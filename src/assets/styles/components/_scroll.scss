@@ -1,0 +1,15 @@
+// Scrollbars
+::-webkit-scrollbar {
+  background: lighten($COR_DEFAULT, 30%);
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: $COR_DEFAULT;
+}

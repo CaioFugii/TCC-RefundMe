@@ -1,0 +1,89 @@
+.header{
+  background: $COR_DEFAULT;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.5);
+  height: 70px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+// Logo
+.header-logo{
+  left: 20px;
+  max-width: 180px;
+  position: absolute;
+  top: 10px;
+}
+
+// Menu Button
+.header-menu-toggle{
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  left: 130px;
+  padding-left: 40px;
+  position: relative;
+  text-transform: uppercase;
+  top: 20px;
+  transition: all 400ms;
+  display: none;
+
+  &:after{
+    background: #fff;
+    box-shadow: 0 -8px 0 #fff, 0 8px 0 #fff;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+  }
+
+  &:hover{
+    opacity: .5;
+  }
+
+  @media (max-width: $MEDIA_IPAD) {
+    display: inline-block;
+  }
+}
+
+// Search
+.header-search{
+  display: inline-block;
+}
+
+// Perfil
+.header-ferramentas{
+  color: #FFFFFF;
+  display: inline-block;
+  float: right;
+  padding: 17px 23px;
+  vertical-align: middle;
+
+  .btn {
+    color: $COR_BRAND;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.header-ferramentas-link{
+  color: #FFFFFF;
+  margin-left: 30px;
+  transition: all 400ms;
+
+  &:hover{
+    opacity: .4;
+  }
+}
+
+.header-perfil{
+  font-size: 12px;
+  padding-left: 10px;
+}

@@ -1,0 +1,43 @@
+// Background
+.bg-info{
+  background-color: $COR_INFO;
+  color: #FFFFFF;
+}
+
+.bg-danger{
+  background-color: $COR_DANGER;
+  color: #FFFFFF;
+}
+
+.bg-success{
+  background-color: $COR_SUCCESS;
+  color: #FFFFFF;
+}
+
+.bg-default{
+  background-color: #696969;
+  color: #FFFFFF;
+}
+
+.bg-warning{
+  background-color: $COR_WAITING;
+  color: #FFFFFF;
+}
+
+.bg-white{
+  background: #FFFFFF;
+  color: #000000;
+}
+
+// Texts
+.text-danger{
+  color: $COR_DANGER;
+}
+
+.text-success{
+  color: $COR_SUCCESS;
+}
+
+.text-default{
+  color: $COR_SECONDARY;
+}

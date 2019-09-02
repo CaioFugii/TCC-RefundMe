@@ -1,0 +1,40 @@
+@import
+// Abstracts
+'./abstracts/_variables.scss',
+'./abstracts/_colors.scss',
+
+//base
+'./base/_base.scss',
+'./base/_grids.scss',
+'./base/_reset.scss',
+'./base/_typography.scss',
+
+//form - components
+'./components/form/_buttons.scss',
+// './components/form/_checkbox.scss',
+'./components/form/_form.scss',
+'./components/form/_radio.scss',
+'./components/form/_switch.scss',
+'./components/form/_upload.scss',
+'./components/form/_validation.scss',
+
+//components
+'./components/_accordion.scss',
+'./components/_alerts.scss',
+'./components/_badge.scss',
+'./components/_breadcrumb.scss',
+'./components/_loader.scss',
+'./components/_modal.scss',
+'./components/_scroll.scss',
+'./components/_spinner.scss',
+'./components/_tables.scss',
+'./components/_tooltip.scss',
+
+//includes
+'./includes/_header.scss',
+'./includes/_menu.scss',
+
+//layout
+'./pages/_login.scss',
+'./pages/_expenses-refunds.scss',
+'./layout/_pages.scss'

@@ -1,0 +1,20 @@
+.invalid-feedback,
+.text-validation,
+.text-informations{
+  font: 10px 'Roboto';
+  text-transform: uppercase;
+  line-height: 13px;
+  color: $COR_DANGER;
+  position: absolute;
+  bottom: -17px;
+  transition: all 400ms;
+  font-weight: bold;
+}
+
+.text-informations{
+  position: relative;
+}
+
+//.ng-invalid{
+//  border-color: $COR_DANGER;
+//}

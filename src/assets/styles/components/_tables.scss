@@ -1,0 +1,86 @@
+.table{
+  font-weight: 300;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+// Thead
+.table{
+  thead{
+    tr{
+      td, th{
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 12px 8px;
+        // text-align: left;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+// Tbody
+.table{
+  tbody{
+    tr{
+      position: relative;
+      td{
+        //border-top: 1px solid #e6e6e6;
+        font-size: 14px;
+        padding: 12px 8px;
+        vertical-align: middle;
+        word-wrap: break-word;
+        max-width: 250px;
+      }
+    }
+  }
+
+  &.table-striped{
+    tbody{
+      tr{
+        &:nth-of-type(even) {
+          background-color: #f9f9f9;
+        }
+        &:last-child{
+          //border-bottom: 1px solid #e6e6e6;
+        }
+
+        td {
+          svg {
+            font-size: 1.2em;
+
+            &:hover {
+              color: $COR_BRAND;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Actions
+.table{
+  .td-actions{
+    .btn{
+      margin: 0;
+      padding: 5px;
+    }
+  }
+}
+
+// Responsive
+.table-responsive{
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+
+// Not Search
+.table-not-search{
+  padding: 20px;
+  i{
+    vertical-align: middle;
+  }
+}

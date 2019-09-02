@@ -1,0 +1,135 @@
+button {
+  &:disabled {
+    cursor: initial;
+    opacity: .8;
+
+    &:hover:enabled {
+      box-shadow: none;
+    }
+  }
+}
+
+// Button
+%btn,
+.btn {
+  background-color: $COR_DEFAULT;
+  border: 1px solid $COR_DEFAULT;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  transition: all 400ms;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  & + .btn {
+    margin-left: 10px;
+  }
+
+  > .icon-left {
+    margin-right: 10px; 
+  }
+
+  > .icon-right {
+    margin-left: 10px; 
+  }
+
+  &:hover:enabled {
+    background: transparent;
+    color: #000000;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+}
+
+.btn-back {
+  @extend %btn;
+  background: transparent;
+  border: 1px solid $COR_DEFAULT;
+  color: $COR_DEFAULT;
+
+  &:hover:enabled {
+    box-shadow: none;
+  }
+}
+
+// Botão arredondado
+.btn-round {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 25px;
+  margin: 0 3px;
+  text-align: center;
+  transition: all 400ms;
+  width: 25px;
+
+  &:hover:enabled,
+  &:focus {
+    box-shadow: 0 0 10px #999;
+    outline: none;
+  }
+}
+
+// Group
+.buttons-group {
+  display: block;
+  padding: 15px 0;
+}
+
+// Colors
+.btn-info {
+  background-color: $COR_INFO;
+  border-color: $COR_INFO;
+  color: #FFFFFF;
+}
+
+.btn-danger {
+  background-color: $COR_DANGER;
+  border-color: $COR_DANGER;
+  color: #FFFFFF;
+}
+
+.btn-danger-outline {
+  background-color: transparent;
+  border-color: $COR_DANGER;
+  color: $COR_DANGER;
+}
+
+.btn-success {
+  background-color: $COR_SUCCESS;
+  border-color: $COR_SUCCESS;
+  color: #FFFFFF;
+}
+
+.btn-default {
+  background-color: #696969;
+  border-color: #696969;
+  color: #FFFFFF;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+// Outiline
+.btn-outilne {
+  background-color: transparent;
+  color: #000000;
+
+  &:hover:enabled {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,56 @@
+.badge {
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  white-space: nowrap;
+
+  @at-root a#{&}, button#{&} {
+    cursor: pointer;
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &.badge-users {
+    cursor: pointer;
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &.badge-outline {
+    background: transparent;
+    border: 1px solid #696969;
+    color: #696969;
+    font-weight: bold;
+  }
+
+  &.badge-outline-white {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+  &.badge-white{
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+.badge-rounded {
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 2px 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

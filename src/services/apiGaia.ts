@@ -3,7 +3,7 @@ import axios from 'axios';
 import { getToken } from './auth';
 
 const apiGaia = axios.create({
-    baseURL: 'https://***********************/',
+    baseURL: process.env.REACT_APP_API_GAIA,
 });
 
 

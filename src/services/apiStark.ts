@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiStark = axios.create({
-  baseURL: "http://localhost:7071/"
+  baseURL: process.env.REACT_APP_API_STARK
 });
 
 export default apiStark;
